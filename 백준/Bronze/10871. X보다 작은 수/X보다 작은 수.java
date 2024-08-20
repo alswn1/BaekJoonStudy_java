@@ -4,15 +4,13 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str = br.readLine();
-        String str2 = br.readLine();
-
-        StringTokenizer st = new StringTokenizer(str);
+        StringTokenizer st = new StringTokenizer(br.readLine());
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
-
+        
+        String str = br.readLine();
         List<String> list = new ArrayList<String>();
-        String[] spArr = str2.split(" ");
+        String[] spArr = str.split(" ");
 
         String answer = "";
         for (int i = 0; i < a; i++) {
