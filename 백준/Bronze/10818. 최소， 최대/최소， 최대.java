@@ -9,8 +9,9 @@ public class Main {
         int max = Integer.parseInt(str[0]);
         int min = Integer.parseInt(str[0]);
         for (int i=1; i<num1; i++) {
-            if (max < Integer.parseInt(str[i])) max=Integer.parseInt(str[i]);
-            if (min > Integer.parseInt(str[i])) min=Integer.parseInt(str[i]);
+            int num2 = Integer.parseInt(str[i]);
+            if (max < num2) max=num2;
+            if (min > num2) min=num2;
         }
         System.out.println((min + " ") + (max + ""));
     }
